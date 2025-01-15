@@ -106,15 +106,15 @@ namespace ImageRecognition
             for (int i = 0; i < img2.Length; i++) {
                 outputLevel1[i] = level1[i].Work(img2);
             }
-            textBox3.Text = "N0=" + outputLevel1[0].ToString();
-            textBox3.Text += ",N1=" + outputLevel1[1].ToString();
-            textBox3.Text += ",N2=" + outputLevel1[2].ToString();
-            textBox3.Text += ",N3=" + outputLevel1[3].ToString();
-            textBox3.Text += ",N4=" + outputLevel1[4].ToString();
-            textBox3.Text += ",N5=" + outputLevel1[5].ToString();
-            textBox3.Text += ",N6=" + outputLevel1[6].ToString();
-            textBox3.Text += ",N7=" + outputLevel1[7].ToString();
-            textBox3.Text += ",N8=" + outputLevel1[8].ToString();
+            textBox3.Text = "N0 =" + outputLevel1[0].ToString();
+            textBox3.Text += ",N1 =" + outputLevel1[1].ToString();
+            textBox3.Text += ",N2 =" + outputLevel1[2].ToString();
+            textBox3.Text += ",N3 =" + outputLevel1[3].ToString();
+            textBox3.Text += ",N4 =" + outputLevel1[4].ToString();
+            textBox3.Text += ",N5 =" + outputLevel1[5].ToString();
+            textBox3.Text += ",N6 =" + outputLevel1[6].ToString();
+            textBox3.Text += ",N7 =" + outputLevel1[7].ToString();
+            textBox3.Text += ",N8 =" + outputLevel1[8].ToString();
 
 
             double output = level2.Work(outputLevel1);
