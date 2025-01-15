@@ -1,0 +1,10 @@
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.exe.config
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.exe
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.pdb
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.AssemblyReference.cache
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.Form1.resources
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.Properties.Resources.resources
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.GenerateResource.cache
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.CoreCompileInputs.cache
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.exe
+C:\Users\Boyan Mihaylov\source\repos\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.pdb
