@@ -115,7 +115,18 @@ namespace ImageRecognition
             textBox3.Text += ",N6 =" + outputLevel1[6].ToString();
             textBox3.Text += ",N7 =" + outputLevel1[7].ToString();
             textBox3.Text += ",N8 =" + outputLevel1[8].ToString();
+            //
+            textBox1.Text = level1[0].mid.ToString();
+            textBox2.Text = level1[1].mid.ToString();
+            textBox13.Text = level1[2].mid.ToString();
+            textBox14.Text = level1[3].mid.ToString();
+            textBox15.Text = level1[4].mid.ToString();
+            textBox16.Text = level1[5].mid.ToString();
+            textBox17.Text = level1[6].mid.ToString();
+            textBox18.Text = level1[7].mid.ToString();
+            textBox19.Text = level1[8].mid.ToString();
 
+            textBox20.Text = level2.mid.ToString();
 
             double output = level2.Work(outputLevel1);
             textBox3.Text += ",O=" + output.ToString();
@@ -191,6 +202,66 @@ namespace ImageRecognition
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox19_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox20_TextChanged(object sender, EventArgs e)
         {
 
         }
