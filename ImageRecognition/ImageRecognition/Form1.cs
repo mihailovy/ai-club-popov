@@ -117,6 +117,7 @@ namespace ImageRecognition
             textBox3.Text += ",N8 =" + outputLevel1[8].ToString();
             //
             textBox1.Text = level1[0].mid.ToString();
+            textBox21.Text = level1[0].output.ToString();
             textBox2.Text = level1[1].mid.ToString();
             textBox13.Text = level1[2].mid.ToString();
             textBox14.Text = level1[3].mid.ToString();
@@ -127,6 +128,8 @@ namespace ImageRecognition
             textBox19.Text = level1[8].mid.ToString();
 
             textBox20.Text = level2.mid.ToString();
+            textBox22.Text = level2.output.ToString();
+           
 
             double output = level2.Work(outputLevel1);
             textBox3.Text += ",O=" + output.ToString();
@@ -265,6 +268,31 @@ namespace ImageRecognition
         {
 
         }
+
+        private void textBox26_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     class Neuron
     {
@@ -272,6 +300,7 @@ namespace ImageRecognition
         private double[] input;
         private double[] weight;
         public double mid;
+        public double output;
 
         public Neuron(double[] w)
         {
@@ -282,7 +311,6 @@ namespace ImageRecognition
         public double Work(double[] inp)
         {
             double sum = 0;
-            double output;
             input = inp;
             for (int i = 0; i < input.Length; i++)
             {
