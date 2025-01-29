@@ -30,7 +30,6 @@ namespace ImageRecognition
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -87,15 +86,6 @@ namespace ImageRecognition
             this.button1.Text = "Run Network";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(88, 140);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(304, 22);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -400,6 +390,7 @@ namespace ImageRecognition
             this.textBox24.Name = "textBox24";
             this.textBox24.Size = new System.Drawing.Size(100, 22);
             this.textBox24.TabIndex = 40;
+            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
             // 
             // textBox25
             // 
@@ -407,6 +398,7 @@ namespace ImageRecognition
             this.textBox25.Name = "textBox25";
             this.textBox25.Size = new System.Drawing.Size(100, 22);
             this.textBox25.TabIndex = 41;
+            this.textBox25.TextChanged += new System.EventHandler(this.textBox25_TextChanged);
             // 
             // textBox26
             // 
@@ -422,6 +414,7 @@ namespace ImageRecognition
             this.textBox27.Name = "textBox27";
             this.textBox27.Size = new System.Drawing.Size(100, 22);
             this.textBox27.TabIndex = 43;
+            this.textBox27.TextChanged += new System.EventHandler(this.textBox27_TextChanged);
             // 
             // textBox28
             // 
@@ -429,6 +422,7 @@ namespace ImageRecognition
             this.textBox28.Name = "textBox28";
             this.textBox28.Size = new System.Drawing.Size(100, 22);
             this.textBox28.TabIndex = 44;
+            this.textBox28.TextChanged += new System.EventHandler(this.textBox28_TextChanged);
             // 
             // textBox29
             // 
@@ -436,6 +430,7 @@ namespace ImageRecognition
             this.textBox29.Name = "textBox29";
             this.textBox29.Size = new System.Drawing.Size(100, 22);
             this.textBox29.TabIndex = 45;
+            this.textBox29.TextChanged += new System.EventHandler(this.textBox29_TextChanged);
             // 
             // textBox30
             // 
@@ -443,6 +438,7 @@ namespace ImageRecognition
             this.textBox30.Name = "textBox30";
             this.textBox30.Size = new System.Drawing.Size(100, 22);
             this.textBox30.TabIndex = 46;
+            this.textBox30.TextChanged += new System.EventHandler(this.textBox30_TextChanged);
             // 
             // label13
             // 
@@ -521,7 +517,6 @@ namespace ImageRecognition
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
@@ -534,7 +529,6 @@ namespace ImageRecognition
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;

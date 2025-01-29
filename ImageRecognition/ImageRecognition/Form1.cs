@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ImageRecognition
 {
@@ -72,9 +74,9 @@ namespace ImageRecognition
                                -1.0, -1.0, -1.0}
                  );
             level2 = new Neuron(
-                 new double[] {-125.0, +1250.0, -125.0,
-                               +1250.0, -125.0, +1250.0,
-                               -125.0, +1250.0, -125.0}
+                 new double[] {-50.0, +10.0, -50.0,
+                               +10.0, -50.0, +10.0,
+                               -50.0, +10.0, -50.0}
                  );
         }
 
@@ -106,18 +108,11 @@ namespace ImageRecognition
             for (int i = 0; i < img2.Length; i++) {
                 outputLevel1[i] = level1[i].Work(img2);
             }
-            textBox3.Text = "N0 =" + outputLevel1[0].ToString();
-            textBox3.Text += ",N1 =" + outputLevel1[1].ToString();
-            textBox3.Text += ",N2 =" + outputLevel1[2].ToString();
-            textBox3.Text += ",N3 =" + outputLevel1[3].ToString();
-            textBox3.Text += ",N4 =" + outputLevel1[4].ToString();
-            textBox3.Text += ",N5 =" + outputLevel1[5].ToString();
-            textBox3.Text += ",N6 =" + outputLevel1[6].ToString();
-            textBox3.Text += ",N7 =" + outputLevel1[7].ToString();
-            textBox3.Text += ",N8 =" + outputLevel1[8].ToString();
-            //
+
+            // Visualize middle value of neurons
+
+            /// level one
             textBox1.Text = level1[0].mid.ToString();
-            textBox21.Text = level1[0].output.ToString();
             textBox2.Text = level1[1].mid.ToString();
             textBox13.Text = level1[2].mid.ToString();
             textBox14.Text = level1[3].mid.ToString();
@@ -127,12 +122,28 @@ namespace ImageRecognition
             textBox18.Text = level1[7].mid.ToString();
             textBox19.Text = level1[8].mid.ToString();
 
+            // Level two
             textBox20.Text = level2.mid.ToString();
+
+            // Visualize output value of neurons
+
+            // Level one 
+            textBox21.Text = level1[0].output.ToString();
+            textBox23.Text = level1[1].output.ToString();
+            textBox24.Text = level1[2].output.ToString();
+            textBox25.Text = level1[3].output.ToString();
+            textBox26.Text = level1[4].output.ToString();
+            textBox27.Text = level1[5].output.ToString();
+            textBox28.Text = level1[6].output.ToString();
+            textBox29.Text = level1[7].output.ToString();
+            textBox30.Text = level1[8].output.ToString();
+
+            // Level two
             textBox22.Text = level2.output.ToString();
-           
+
+
 
             double output = level2.Work(outputLevel1);
-            textBox3.Text += ",O=" + output.ToString();
         }
          
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -162,45 +173,114 @@ namespace ImageRecognition
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try{
+                img[0][0] = Convert.ToDouble(t.Text);
+            } catch (Exception ee1)
+            { 
+            }
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[0][1] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[0][2] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox9_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[1][0] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[1][1] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[1][2] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox12_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[2][0] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox11_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[2][1] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
         {
+            System.Windows.Forms.TextBox t = sender as System.Windows.Forms.TextBox;
+            try
+            {
+                img[2][2] = Convert.ToDouble(t.Text);
+            }
+            catch (Exception ee1)
+            {
+            }
 
         }
 
@@ -290,6 +370,36 @@ namespace ImageRecognition
         }
 
         private void textBox23_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox24_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox25_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox27_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox28_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox29_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox30_TextChanged(object sender, EventArgs e)
         {
 
         }
