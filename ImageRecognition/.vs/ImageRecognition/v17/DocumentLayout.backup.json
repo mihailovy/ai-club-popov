@@ -26,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\\u041F\u0413\u0412\u0422\\Documents\\ai-club-popov\\ImageRecognition\\ImageRecognition\\Form1.cs",
+              "RelativeDocumentMoniker": "ImageRecognition\\Form1.cs",
+              "ToolTip": "C:\\Users\\\u041F\u0413\u0412\u0422\\Documents\\ai-club-popov\\ImageRecognition\\ImageRecognition\\Form1.cs",
+              "RelativeToolTip": "ImageRecognition\\Form1.cs",
+              "ViewState": "AgIAAK8BAAAAAAAAAAAjwMUBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T09:52:47.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -46,19 +59,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\\u041F\u0413\u0412\u0422\\Documents\\ai-club-popov\\ImageRecognition\\ImageRecognition\\Form1.cs",
-              "RelativeDocumentMoniker": "ImageRecognition\\Form1.cs",
-              "ToolTip": "C:\\Users\\\u041F\u0413\u0412\u0422\\Documents\\ai-club-popov\\ImageRecognition\\ImageRecognition\\Form1.cs",
-              "RelativeToolTip": "ImageRecognition\\Form1.cs",
-              "ViewState": "AgIAAAUBAAAAAAAAAAAjwBMBAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T09:52:47.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u041F\u0413\u0412\u0422\\Documents\\ai-club-popov\\ImageRecognition\\ImageRecognition\\Program.cs",
@@ -67,8 +67,7 @@
               "RelativeToolTip": "ImageRecognition\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T09:48:38.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T09:48:38.159Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "ImageRecognition\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T09:48:21.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T09:48:21.585Z"
             }
           ]
         }

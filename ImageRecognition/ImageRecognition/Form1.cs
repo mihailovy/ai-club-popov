@@ -78,6 +78,27 @@ namespace ImageRecognition
                                +10.0, -50.0, +10.0,
                                -50.0, +10.0, -50.0}
                  );
+            double[] img2 = new double[9];
+            img2[0] = (double)img[0][0];
+            img2[1] = (double)img[0][1];
+            img2[2] = (double)img[0][2];
+            img2[3] = (double)img[1][0];
+            img2[4] = (double)img[1][1];
+            img2[5] = (double)img[1][2];
+            img2[6] = (double)img[2][0];
+            img2[7] = (double)img[2][1];
+            img2[8] = (double)img[2][2];
+            textBox4.Text = "" + img2[0];
+            textBox5.Text = "" + img2[1];
+            textBox6.Text = "" + img2[2];
+
+            textBox9.Text = "" + img2[3];
+            textBox8.Text = "" + img2[4];
+            textBox7.Text = "" + img2[5];
+
+            textBox12.Text = "" + img2[6];
+            textBox11.Text = "" + img2[7];
+            textBox10.Text = "" + img2[8];
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -403,6 +424,11 @@ namespace ImageRecognition
         {
 
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     class Neuron
     {
@@ -427,7 +453,10 @@ namespace ImageRecognition
                 sum += input[i] * weight[i];
             }
             mid = sum;
-            output = 1 / (1 + Math.Exp(-sum));
+
+            // Sigma function: returns a vlue between o and 1
+            // output = 1 / (1 + Math.Exp(-sum));
+            output = (sum > 0) ? 1 : 0;
             return output;
         }
 
