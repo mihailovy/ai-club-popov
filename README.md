@@ -3,3 +3,5 @@
 Сорс код на Клуб "Изкуствен интелект" към ПГВТ "А.С.Попов"
 <br/>
 ![Logo](./assets/popov-logo.png)
+<br/>
+![Logo](./assets/club-image.png)
