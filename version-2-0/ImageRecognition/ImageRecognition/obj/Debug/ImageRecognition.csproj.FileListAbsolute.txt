@@ -18,3 +18,13 @@ C:\Users\ПГВТ\Documents\ai-club-popov\ImageRecognition\ImageRecognition\obj\
 C:\Users\ПГВТ\Documents\ai-club-popov\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.CoreCompileInputs.cache
 C:\Users\ПГВТ\Documents\ai-club-popov\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.exe
 C:\Users\ПГВТ\Documents\ai-club-popov\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.pdb
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.AssemblyReference.cache
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.Form1.resources
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.Properties.Resources.resources
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.GenerateResource.cache
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.csproj.CoreCompileInputs.cache
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.exe
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\obj\Debug\ImageRecognition.pdb
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.exe.config
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.exe
+C:\Users\pisma\Documents\ai-club-popov\version-2-0\ImageRecognition\ImageRecognition\bin\Debug\ImageRecognition.pdb

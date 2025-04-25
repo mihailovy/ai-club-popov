@@ -7,6 +7,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Timers;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -25,7 +26,7 @@ namespace ImageRecognition
         private Neuron[] level1 = new Neuron[9];
         private Neuron level2;
         
-    public Form1()
+    public Form1(Form myWindow)
         {
             InitializeComponent();
             level1[0] = new Neuron(
@@ -101,7 +102,23 @@ namespace ImageRecognition
             textBox10.Text = "" + img2[8];
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void generateImage()
+        {
+            
+            // Outer loop to iterate through rows (img)
+            for (int i = 0; i < img.Length; i++)
+            {
+                // Inner loop to iterate through each element in the row
+                for (int j = 0; j < img[i].Length; j++)
+                {
+                    // Accessing and printing each element of img
+                    Random random = new Random();
+                    img[i][j] = random.NextDouble() * 255;
+                }
+            }
+        }
+
+        private void singleRun()
         {
             double[] img2 = new double[9];
             img2[0] = (double)img[0][0];
@@ -116,7 +133,7 @@ namespace ImageRecognition
             textBox4.Text = "" + img2[0];
             textBox5.Text = "" + img2[1];
             textBox6.Text = "" + img2[2];
-            
+
             textBox9.Text = "" + img2[3];
             textBox8.Text = "" + img2[4];
             textBox7.Text = "" + img2[5];
@@ -126,7 +143,8 @@ namespace ImageRecognition
             textBox10.Text = "" + img2[8];
 
             double[] outputLevel1 = new double[9];
-            for (int i = 0; i < img2.Length; i++) {
+            for (int i = 0; i < img2.Length; i++)
+            {
                 outputLevel1[i] = level1[i].Work(img2);
             }
 
@@ -165,6 +183,23 @@ namespace ImageRecognition
 
 
             double output = level2.Work(outputLevel1);
+        }
+
+        private static void MultipleRun(Object source, ElapsedEventArgs e)
+        {
+            //generateImage();
+            //singleRun();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //System.Timers.Timer aTimer = new System.Timers.Timer(2000);
+            // Hook up the Elapsed event for the timer. 
+            //aTimer.Elapsed += MultipleRun;
+            //aTimer.AutoReset = true;
+            //aTimer.Enabled = true;
+            generateImage();
+            singleRun();
         }
          
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -428,6 +463,25 @@ namespace ImageRecognition
         private void label11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Form AboutUs = new Form();
+            // AboutUs.Text = "За нас";
+            // AboutUs.Width = 100;
+            // AboutUs.Height = 100;
+            // AboutUs.Show();
         }
     }
     class Neuron
